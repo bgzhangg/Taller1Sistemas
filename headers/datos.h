@@ -11,4 +11,9 @@ void rombo();
 void trapecio();
 void circulo();
 void poligono_regular();
+void cubo();
+void cuboide();
+void cilindro();
+void esfera();
+void cono();
 #endif
