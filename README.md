@@ -6,7 +6,9 @@
 - Zaruma Game Joshua Andres
 
 
-**Motivo para escoger al lider**
+# Motivo para escoger al lider
 A traves de sorteo :)
 
+# Divison de Trabajo
+- **Bryan Zhang:** Archivo calculos.c y calculos.h
 
