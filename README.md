@@ -11,4 +11,5 @@ A traves de sorteo :)
 
 # Divison de Trabajo
 - **Bryan Zhang:** Archivo calculos.c y calculos.h
+- **Joshua Zaruma:** Archivo datos.c y datos.h
 
