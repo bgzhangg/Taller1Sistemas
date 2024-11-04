@@ -105,9 +105,9 @@ void cuboide(){
     float a,b,c;
     printf("\nCUBOIDE\nIngrese la longitud de altura: ");
     scanf("%f", &a);
-    printf("\nCUBO\nIngrese la longitud de anchura: ");
+    printf("\nIngrese la longitud de anchura: ");
     scanf("%f", &b);
-    printf("\nCUBO\nIngrese la longitud de prufundidad: ");
+    printf("\nIngrese la longitud de prufundidad: ");
     scanf("%f", &c);
     printf("\nVolumen: %.2f\nÁrea de la Superficie: %.2f \n",volumen_cuboide(a,b,c),superficie_cuboide(a,b,c));
 }
@@ -115,7 +115,7 @@ void cilindro(){
     float radio,altura;
     printf("\nCILINDRO RECTO\nIngrese la longitud de altura: ");
     scanf("%f", &altura);
-    printf("\nCUBO\nIngrese el radio de la base: ");
+    printf("\nIngrese el radio de la base: ");
     scanf("%f", &radio);
     printf("\nVolumen: %.2f\nÁrea de la Superficie: %.2f \n",volumen_cilindro(radio,altura),superficie_cilindro(radio,altura));
 }
@@ -129,9 +129,9 @@ void cono(){
     float radio,altura,generatris;
     printf("\nCONO CÍRCULAR RECTO\nIngrese la longitud de altura: ");
     scanf("%f", &altura);
-    printf("\nCUBO\nIngrese el radio de la base: ");
+    printf("\nIngrese el radio de la base: ");
     scanf("%f", &radio);
-    printf("\nCUBO\nIngrese la longitud de la generatriz: ");
+    printf("\nIngrese la longitud de la generatriz: ");
     scanf("%f", &generatris);
     printf("\nVolumen: %.2f\nÁrea de la Superficie: %.2f \n",volumen_cono(radio,altura),superficie_cono(radio,generatris));
 }
