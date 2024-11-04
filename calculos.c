@@ -3,7 +3,6 @@
 #include <stdbool.h>
 #include <math.h>
 #include "Headers/calculos.h"
-#include "Headers/datos.h"
 
 float pi = (22/7); //Pi se usa varias veces, asi que para no calcular varias veces, lo guardamos en una variable independiente
 
