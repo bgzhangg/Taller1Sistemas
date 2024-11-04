@@ -10,4 +10,14 @@ float area_circulo(float radio);
 float perimetro_circulo(float radio);
 float perimetro_poligonor(float lado, float  n);
 float area_poligonor(float lado, float n);
+float volumen_cubo(float lado);
+float superficie_cubo(float lado);
+float volumen_cuboide(float a, float b, float c);
+float superficie_cuboide( float a, float b, float);
+float volumen_cilindro(float radio, float altura);
+float superficie_cilindro(float radio,float altura);
+float volumen_esfera(float radio);
+float superficie_esfera(float radio);
+float volumen_cono(float radio,float altura);
+float superficie_cono(float radio,float generatris);
 #endif
