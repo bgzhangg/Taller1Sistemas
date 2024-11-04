@@ -14,24 +14,31 @@ int main(){
             bandera=0;
             break;
         case 2:
+            paralelogramo();
             bandera=0;
             break;
         case 3:
+            cuadrado();
             bandera=0;
             break;
         case 4:
+            rectangulo();
             bandera=0;
             break;
         case 5:
+            rombo();
             bandera=0;
             break;
         case 6:
+            trapecio();
             bandera=0;
             break;
         case 7:
+            circulo();
             bandera=0;
             break;
         case 8:
+            poligono_regular();
             bandera=0;
             break;
         default:
