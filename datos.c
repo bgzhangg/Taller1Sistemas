@@ -15,7 +15,8 @@ int pedir_opcion(){
 void repito(){
     printf("Pon algo coherente");
 }
-void triangulo(float l1, float l2,float l3, float base, float altura){
+void triangulo(){
+    float l1,l2,l3,base,altura;
     float area;
     float perimetro;
     printf("\nIngrese longitud del lado 1: ");
@@ -33,7 +34,8 @@ void triangulo(float l1, float l2,float l3, float base, float altura){
     printf("\nÁrea: %.2f",area);
     printf("\nPerimetro: %.2f",perimetro);
 }
-void paralelogramo(float a, float b, float base, float altura){
+void paralelogramo(){
+    float a,b,base,altura;
     float area;
     float perimetro;
     printf("\nIngrese longitud del lado 1: ");
@@ -51,7 +53,8 @@ void paralelogramo(float a, float b, float base, float altura){
     printf("\nÁrea: %.2f",area);
     printf("\nPerimetro: %.2f",perimetro);
 }
-void cuadrado(float lado){
+void cuadrado(){
+    float lado;
     float area;
     float perimetro;
     printf("\nIngrese longitud de los lados: ");
@@ -63,7 +66,8 @@ void cuadrado(float lado){
     printf("\nÁrea: %.2f",area);
     printf("\nPerimetro: %.2f",perimetro);
 }
-void rectangulo(float base,float altura){
+void rectangulo(){
+    float base,altura;
     float area;
     float perimetro;
     printf("\nIngrese Base: ");
@@ -77,7 +81,8 @@ void rectangulo(float base,float altura){
     printf("\nÁrea: %.2f",area);
     printf("\nPerimetro: %.2f",perimetro);
 }
-void rombo(float diagonalM,float diagonalm,float lado){
+void rombo(){
+    float diagonalM,diagonalm,lado;
     float area;
     float perimetro;
     printf("\nIngrese longitud de los lados: ");
@@ -93,7 +98,8 @@ void rombo(float diagonalM,float diagonalm,float lado){
     printf("\nÁrea: %.2f",area);
     printf("\nPerimetro: %.2f",perimetro);
 }
-void trapecio(float lado1,float lado2,float basem,float baseM,float altura){
+void trapecio(){
+    float lado1,lado2,basem,baseM,altura;
     float area;
     float perimetro;
     printf("\nIngrese longitud del lado Izquierdo: ");
@@ -111,7 +117,8 @@ void trapecio(float lado1,float lado2,float basem,float baseM,float altura){
     printf("\nÁrea: %.2f",area);
     printf("\nPerimetro: %.2f",perimetro);
 }
-void circulo(float radio){
+void circulo(){
+    float radio;
     float area;
     float perimetro;
     printf("\nIngrese longitud del radio: ");
@@ -121,7 +128,8 @@ void circulo(float radio){
     printf("\nÁrea: %.2f",area);
     printf("\nPerimetro: %.2f",perimetro);
 }
-void poligono_regular(float lado,float n){
+void poligono_regular(){
+    float lado,n;
     float area;
     float perimetro;
     printf("\nIngrese longitud de los lados: ");
