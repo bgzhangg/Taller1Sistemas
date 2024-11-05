@@ -1,5 +1,6 @@
 #include "headers/datos.h"
 #include "headers/sesion.h"
+#include<stdlib.h>
 int main(){
 
 
