@@ -4,9 +4,9 @@
 #include "headers/sesion.h"
 #include <string.h>
 
-char fixeduser;
+char *fixeduser;
 
-char ObtenerFecha(){
+char *ObtenerFecha(){
     char *fecha;
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
@@ -31,16 +31,19 @@ void InicioFallido(char *user){
 
 int ValidarUser(char *user,char *pswd){
     FILE *fp;
-    char linea[101];
+    char linea[150];
+    user[strcspn(user, "\n")] = 0;
+    pswd[strcspn(pswd, "\n")] = 0;
     int fnd = 0;
     char *objt;
     sprintf(objt,"%s-%s",user,pswd);
+    printf("Hoaaaaaa");
     fp = fopen("registry.txt","r");
     while(fgets(linea,sizeof(linea),fp) != NULL){
         linea[strcspn(linea,"\n")] = 0;
-        if (strcmp(linea,sprintf) == 0){
+        if (strcmp(linea,objt) == 0){
             fnd = 1;
-            fixeduser = user;
+            strcpy(fixeduser,user);
             break;
         }
     }
@@ -57,7 +60,7 @@ void Salida(){
 void RegistrarUso(char *fig){
     FILE *fp;
     fp = fopen("logs.txt","a");
-    fprintf("%s: %s - %s", ObtenerFecha,fixeduser,fig);
+    fprintf(fp,"\n%s: %s - %s", ObtenerFecha(),fixeduser,fig);
     fclose(fp);
 
 }

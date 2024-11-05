@@ -138,14 +138,15 @@ void cono(){
 }
 
 int InicioSesion(){
-    char usuario[50];
-    char pswd[50];
+    char usuario[50] = {0};
+    char pswd[50] = {0};
     int valid = 0;
     while(valid == 0){
-        printf("Ingrese su Usuario:\n");
-        scanf("%49s",usuario);
+        printf("\nIngrese su Usuario:\n");
+        fgets(usuario, sizeof(usuario), stdin);
         printf("Ingrese su Contraseña:\n");
-        scanf("%49s",pswd);
+        fgets(pswd, sizeof(pswd), stdin);
+        printf("\nValidando...");
         valid = ValidarUser(usuario,pswd);
         if(valid == 0){
             printf("\nUsuario y/o Contraseña no validos, intente otra vez\n");
