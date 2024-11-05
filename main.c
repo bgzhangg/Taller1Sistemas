@@ -1,7 +1,11 @@
 #include "headers/datos.h"
+
 int main(){
+
+
     int valorIngresado=0;
     int seguir=1;
+    InicioSesion();
     while (seguir){
         mostrar_menu_figuras();
         valorIngresado=pedir_opcion();

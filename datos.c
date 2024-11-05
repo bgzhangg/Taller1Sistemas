@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "headers/datos.h"
 #include "headers/calculos.h"
+#include "headers/sesion.h"
 void mostrar_menu_figuras(){
     printf("\nCalculadora Linux\nEscoge que figura quieres calcular:\n");
     printf("1. Triángulo\n2. Paralelogramo\n3. Cuadrado\n4. Rectángulo\n5. Rombo\n6. Trapecio\n7. Círculo\n8. Polígono Regular");
@@ -134,4 +135,24 @@ void cono(){
     printf("\nIngrese la longitud de la generatriz: ");
     scanf("%f", &generatris);
     printf("\nVolumen: %.2f\nÁrea de la Superficie: %.2f \n",volumen_cono(radio,altura),superficie_cono(radio,generatris));
+}
+
+int InicioSesion(){
+    char usuario[50];
+    char pswd[50];
+    int valid = 0;
+    while(valid == 0){
+        printf("Ingrese su Usuario:\n");
+        scanf("%49s",usuario);
+        printf("Ingrese su Contraseña:\n");
+        scanf("%49s",pswd);
+        valid = ValidarUser(usuario,pswd);
+        if(valid == 0){
+            printf("\nUsuario y/o Contraseña no validos, intente otra vez\n");
+            InicioFallido(usuario);
+        }
+    }
+    printf("\nInicio exitoso!\n Bienvenido %s\n",usuario);
+    InicioExitoso(usuario);
+
 }

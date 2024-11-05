@@ -16,4 +16,5 @@ void cuboide();
 void cilindro();
 void esfera();
 void cono();
+int InicioSesion();
 #endif
