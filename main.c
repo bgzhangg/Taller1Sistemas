@@ -1,5 +1,5 @@
 #include "headers/datos.h"
-
+#include "headers/sesion.h"
 int main(){
 
 
@@ -12,12 +12,15 @@ int main(){
         switch (valorIngresado)
         {
         case 1:
+            RegistrarUso("Triangulo");
             triangulo();
             break;
         case 2:
+            RegistrarUso("Paralelogramo");
             paralelogramo();
             break;
         case 3:
+            RegistrarUso("Cuadrado");
             cuadrado();
             break;
         case 4:
@@ -60,4 +63,5 @@ int main(){
             break;
         }
     }
+    Salida();
 }

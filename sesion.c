@@ -4,6 +4,7 @@
 #include "headers/sesion.h"
 #include <string.h>
 
+char fixeduser;
 
 char ObtenerFecha(){
     char *fecha;
@@ -39,6 +40,7 @@ int ValidarUser(char *user,char *pswd){
         linea[strcspn(linea,"\n")] = 0;
         if (strcmp(linea,sprintf) == 0){
             fnd = 1;
+            fixeduser = user;
             break;
         }
     }
@@ -49,5 +51,13 @@ int ValidarUser(char *user,char *pswd){
 void Salida(){
     FILE *fp;
     fp = fopen("logs.txt","a");
-    fprintf(fp,"\n%s: %s:");
+    fprintf(fp,"\n%s: %s: Salida del Sistema",ObtenerFecha(),fixeduser);
+}
+
+void RegistrarUso(char *fig){
+    FILE *fp;
+    fp = fopen("logs.txt","a");
+    fprintf("%s: %s - %s", ObtenerFecha,fixeduser,fig);
+    fclose(fp);
+
 }
