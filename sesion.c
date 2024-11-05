@@ -56,6 +56,7 @@ void Salida(){
     fp = fopen("logs.txt","a");
     fprintf(fp,"\n%s: %s Salida del Sistema",ObtenerFecha(),fixeduser);
     fclose(fp);
+    exit(0);
     
 }
 

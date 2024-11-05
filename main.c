@@ -66,6 +66,8 @@ int main(){
         case 14:
             //Salir
             seguir=0;
+            Salida();
+            exit(0);
             break;
         default:
             // Verificar que sea una de las opciones
@@ -73,5 +75,4 @@ int main(){
             break;
         }
     }
-    Salida();
 }
