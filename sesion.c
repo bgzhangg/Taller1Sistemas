@@ -4,7 +4,7 @@
 #include "headers/sesion.h"
 #include <string.h>
 
-char *fixeduser;
+char fixeduser[50];
 
 char *ObtenerFecha(){
     char *fecha;
@@ -54,8 +54,9 @@ int ValidarUser(char *user,char *pswd){
 void Salida(){
     FILE *fp;
     fp = fopen("logs.txt","a");
-    fprintf(fp,"\n%s: %s: Salida del Sistema",ObtenerFecha(),fixeduser);
+    fprintf(fp,"\n%s: %s Salida del Sistema",ObtenerFecha(),fixeduser);
     fclose(fp);
+    
 }
 
 void RegistrarUso(char *fig){

@@ -146,7 +146,6 @@ int InicioSesion(){
         fgets(usuario, sizeof(usuario), stdin);
         printf("Ingrese su Contraseña:\n");
         fgets(pswd, sizeof(pswd), stdin);
-        printf("\nValidando...");
         valid = ValidarUser(usuario,pswd);
         if(valid == 0){
             printf("\nUsuario y/o Contraseña no validos, intente otra vez\n");

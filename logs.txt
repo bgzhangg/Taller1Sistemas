@@ -1,3 +1,6 @@
 
 2024/11/05: uno - Ingreso exitoso al sistema!
 2024/11/05: ": Salida del Sistema
+2024/11/05: uuno - Ingreso Fallido, Usuario/Clave incorrecto
+2024/11/05: uno - Ingreso exitoso al sistema!
+2024/11/05: uno: Salida del Sistema
