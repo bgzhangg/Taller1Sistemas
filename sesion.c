@@ -55,6 +55,7 @@ void Salida(){
     FILE *fp;
     fp = fopen("logs.txt","a");
     fprintf(fp,"\n%s: %s: Salida del Sistema",ObtenerFecha(),fixeduser);
+    fclose(fp);
 }
 
 void RegistrarUso(char *fig){
